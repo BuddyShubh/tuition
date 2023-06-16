@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      html,
+      body {
+        height: 100%;
+        background-image: url("tree-silhouette-design.jpg");
+      }
+      table {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+        /* backdrop-filter: blur(3px); */
+      }
+      .header nav .logo {
+        margin-left: 3rem;
+        color: orangered;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: bolder;
+      }
+      .header nav .search {
+        margin-right: 3rem;
+      }
+      .header nav .search input{
+        background: none;
+        outline: none;
+        border: none;
+        border: 1px solid rgba(128, 128, 128, 0.353);
+        padding: 3px;
+      }
+      .header nav ul li {
+        float: left;
+        list-style-type: none;
+      }
+      .header nav ul li a {
+        text-decoration: none;
+      }
+
+      .header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header nav ul {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+      }
+      .left-content {
+        padding: 3rem;
+      }
+      .left-content button {
+        border: none;
+        background-color: orangered;
+        font-size: larger;
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .left-content h1 {
+        font-family: serif;
+        font-size: 50px;
+      }
+      .left-content p {
+        margin-bottom: 1rem;
+      }
+      .left-content h1 span {
+        color: orangered;
+        font-family: serif;
+      }
+
+      .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 5rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+
+      .form {
+        background-color: rgba(108, 56, 38, 0.122);
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .form h1 {
+        background-color: white;
+        color: orangered;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .form a{
+        color: orangered;
+      }
+      .form form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      .form form input {
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 2px solid orangered;
+        padding: 3px;
+        margin-top: 20px;
+      }
+      .form form input::placeholder {
+        color: white;
+      }
+      .form  button {
+        border: none;
+        color: white;
+        background-color: orangered;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="0" border="0px">
+      <tr>
+        <td class="header" colspan="2" height="60px">
+          <nav>
+            <a href="" class="logo">PraRoz</a>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Design</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <div class="search">
+              <input type="search" placeholder="Type To Search" />
+              <input type="button" value="🔍" />
+            </div>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-content" width="50%">
+          <h1>
+            Web Design &<br />
+            <span>Development</span>
+          </h1>
+          <h1>Course</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            commodi maxime! Distinctio odit ex, harum ducimus doloremque natus
+            modi rem commodi. Blanditiis aliquam hic dolores.
+          </p>
+          <button type="button">Join Us</button>
+        </td>
+        <td class="right-content">
+          <div class="form">
+            <h1>login here</h1>
+            <form>
+              <input type="text" placeholder="Enter Email Here" />
+              <input type="text" placeholder="Enter Password Here" />
+            </form>
+            <button type="submit">login</button>
+            <h6>Ah, man! you dont have an account?</h6>
+            <a href="">create one!</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
